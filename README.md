@@ -1,0 +1,1 @@
+Script para geração de arquivos .eml
