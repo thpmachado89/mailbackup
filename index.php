@@ -1,8 +1,10 @@
 <?php
 
+include("credentials.php");
+
 ini_set('max_execution_time', '-1');
 
-$mbox = imap_open( "{mail.infra7.com.br:143/novalidate-cert}INBOX" , 'thiago@infra7.com.br' , '123456' );
+$mbox = imap_open( "{".$host.":".$port."/novalidate-cert}INBOX" , $username, $password );
 
 if( $mbox ) {
    
